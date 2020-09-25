@@ -10,7 +10,7 @@ function App() {
       <div className="">
         <Switch>{routes}</Switch>
       </div>
-     <div style={{ backgroundColor: '#ebe1f2', "padding-top":'140px'}}>
+     <div style={{ backgroundColor: '#ebe1f2', "padding-top":'180px'}}>
      <footer >
         <div class="text-light text-center py-3 "style={{ backgroundColor: '#3f066c'}}>
           © 2020 Copyright:

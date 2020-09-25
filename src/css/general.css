@@ -1,0 +1,30 @@
+.obscuro{
+ background-color: #3F066C;   
+}
+.claro{
+    background-color: #dab4f8;   
+}
+.menuButton{
+    background-color: white;
+    margin: 0;
+    width: 100px;
+    border:#3F066C solid 3px ;
+}
+.borde{
+    border-radius: 5px;
+    border:#3F066C solid 2px ;
+    background-color: #3F066C;
+ }
+.menuText{
+    color: #706f6f;
+    font-weight: bold;
+   
+}
+.menuButton:hover{
+background-color:#3F066C ;
+
+}
+.menuText:hover{
+    color: white ;
+    text-decoration: none;
+}
