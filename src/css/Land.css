@@ -16,3 +16,20 @@
     color: #8f8d8d;
     font-size: 150%;
 }
+.contenedorFila{
+    display: flex;
+    flex-direction: row;
+}
+
+.fila1{
+    background-color: #ebe1f2;
+}
+
+@media screen and (max-width: 800px) {
+    .contenedorFila{
+        display: inline;
+    }
+    .fila1{
+        background-color: #ebe1f2;
+    }
+  }

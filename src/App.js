@@ -7,14 +7,14 @@ function App() {
   return (
     <Router>
       <Navigation />
-      <div className="">
+      <div className="container-fluid p-0">
         <Switch>{routes}</Switch>
       </div>
-     <div style={{ backgroundColor: '#ebe1f2', "padding-top":'180px'}}>
+     <div style={{ backgroundColor: '#ebe1f2', "paddingTop":'180px'}}>
      <footer >
-        <div class="text-light text-center py-3 "style={{ backgroundColor: '#3f066c'}}>
-          © 2020 Copyright:
-          <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+        <div className=" text-light text-center py-3 "style={{ backgroundColor: '#3f066c'}}>
+          2020 - 
+          <a href="https://github.com/Gus657"> @Gus657</a>
         </div>
       </footer>
      </div>

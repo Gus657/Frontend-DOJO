@@ -1,0 +1,32 @@
+.noVisible{
+    display: none;
+}
+.visible{
+    display: flex;
+    flex-direction: row;
+}
+
+.positivo{
+color: #77D353
+}
+
+.negativo{
+    color: #F95F62;
+}
+
+.neutro{
+    color: #00A6FF;
+}
+
+.acerca{
+    color: #969FAA;
+    
+}
+
+.colorImagen{
+
+        color: #976DD0;
+        width: 32px;
+        height: 35px;
+
+}

@@ -7,17 +7,21 @@
 .menuButton{
     background-color: white;
     margin: 0;
-    width: 100px;
     border:#3F066C solid 3px ;
 }
 .borde{
     border-radius: 5px;
     border:#3F066C solid 2px ;
-    background-color: #3F066C;
  }
 .menuText{
     color: #706f6f;
     font-weight: bold;
+    font-size: 150%;
+   
+}
+
+.aboutText{
+    font-size: 150%;
    
 }
 .menuButton:hover{
@@ -28,3 +32,25 @@ background-color:#3F066C ;
     color: white ;
     text-decoration: none;
 }
+
+.contenedorFila{
+    display: flex;
+    flex-direction: row;
+}
+
+.contenedorFila2{
+    display: flex;
+    flex-direction: row;
+}
+
+@media screen and (max-width: 1200px) {
+    .contenedorFila2{
+        display: inline-flexbox;
+        flex-direction: row;
+
+    }
+    .contenedorFila{
+        display: flex;
+        flex-direction: row;
+    }
+  }
