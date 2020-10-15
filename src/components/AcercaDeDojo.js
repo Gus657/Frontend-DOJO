@@ -24,7 +24,7 @@ class CrearPreguntas extends Component {
               <div className="contenedorFila mb-4">
                 <div className="col mt-4 mb-4 ">
                   <center>
-                    <h6 className="text-justify  acerca">
+                    <p className="text-justify  acerca px-4">
                       Dojo es un poyecto destinado a aprovechar la inteligencia
                       artifical en el procesamiento de respuestas en forma de
                       texto, con la finalidad de evitar la intervención humana
@@ -33,7 +33,7 @@ class CrearPreguntas extends Component {
                       finalidad estudiar la capacidad de las máqeuinas de
                       brindar una respuesta a algo tan abstracto como la opinión
                       humana.
-                    </h6>
+                    </p>
                   </center>
                 </div>
               </div>
@@ -49,10 +49,10 @@ class CrearPreguntas extends Component {
               </div>
             </div>
 
-            <div className="contenedorFila ">
+            <div className="contenedorFila1 ">
               <div className="col mt-4 ">
                 <center>
-                  <h6 className="text-justify acerca  pb-4">
+                  <p className="text-justify acerca px-4 pb-4">
                     DOJO se diferencia de otras apliaciones de recolección de
                     información, no solo por la ventaja que ofrece al permitir
                     conocer los resultados de forma directa, sino que esta
@@ -62,7 +62,7 @@ class CrearPreguntas extends Component {
                     resultados en forma de resumen, beneficiando a los
                     interesados en conocer la opinion de los individuos de forma
                     rápida y directa.
-                  </h6>
+                  </p>
                 </center>
               </div>
               <div className="col mt-4 ">
