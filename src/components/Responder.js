@@ -169,7 +169,7 @@ class CrearPreguntas extends Component {
                           >
                             Registrar respuesta
                           </button>
-                        <h6>DOJO no compartirá tu respuesta con nadie mas</h6>
+                        <h6 className="mt-1 text-muted">DOJO no compartirá tu respuesta con nadie mas</h6>
                         </center>
                       </div>
                     </div>
