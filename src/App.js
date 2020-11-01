@@ -14,7 +14,7 @@ function App() {
      <footer >
         <div className=" text-light text-center py-3 "style={{ backgroundColor: '#3f066c'}}>
           2020 - 
-          <a href="http://dojoproject.netlify.app/">Ayuda</a>
+          <a href="https://youtu.be/y2QvcW9T6EQ">Ayuda</a>
         </div>
       </footer>
      </div>
