@@ -43,11 +43,11 @@ class CrearPreguntas extends Component {
       .post(URL, peti)
       .then((res) => {
         alert(
-          "Respuesta Creada Correctamente! :)"
+          "Respuesta Creada Correctamente! ✔"
         );
         
       })
-      .catch((err) => alert("Error al registrar la respuesta"));
+      .catch((err) => alert("Error al registrar la respuesta 😢"));
   };
 
   manejarBusqueda = (e) => {
@@ -60,7 +60,7 @@ class CrearPreguntas extends Component {
       .post(URLBuscar, jsonBuscar)
       .then((res) => {
         if (res.data==null){
-          alert("El código utilizado no es correcto! " ) 
+          alert("El código utilizado no es correcto 😢 " ) 
         }else{
           this.setState({ tema: res.data.tema });
           this.setState({ autorPregunta: res.data.autorPregunta });
@@ -68,7 +68,7 @@ class CrearPreguntas extends Component {
           this.setState({ estado: "visible"});
         }
       })
-      .catch((err) => alert("Error al buscar la pregunta"));
+      .catch((err) => alert("Error al buscar la pregunta 😢"));
   };
   
   render() {
