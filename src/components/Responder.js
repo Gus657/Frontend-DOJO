@@ -10,7 +10,17 @@ class CrearPreguntas extends Component {
     codigoPregunta: "",
     estado:"noVisible"
   };
-
+ despertar(){
+    axios
+      .post('https://dojo-backend-api.herokuapp.com/Despertar')
+      .then((res) => {
+        alert(
+          "Ok"
+        );
+        
+      })
+      .catch((err) => alert("Not Ok"))
+  };
   cambiarInput = (e) => {
     switch (e.target.name) {
       case "codigoPregunta":
@@ -62,9 +72,11 @@ class CrearPreguntas extends Component {
       })
       .catch((err) => alert("Error al buscar la pregunta"));
   };
+  
   render() {
     return (
       <React.Fragment>
+        {this.despertar()}
         <div className="contenedorFila">
           <div className="col p-0">
             <img
@@ -169,7 +181,6 @@ class CrearPreguntas extends Component {
                           >
                             Registrar respuesta
                           </button>
-                        <h6 className="mt-1 text-muted">DOJO no compartirá tu respuesta con nadie mas</h6>
                         </center>
                       </div>
                     </div>

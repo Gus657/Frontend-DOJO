@@ -48,9 +48,21 @@ class CrearPreguntas extends Component {
       })
       .catch((err) => alert("Error al buscar la pregunta"));
   };
+  despertar(){
+    axios
+      .post('https://dojo-backend-api.herokuapp.com/Despertar')
+      .then((res) => {
+        alert(
+          "Ok"
+        );
+        
+      })
+      .catch((err) => alert("Not Ok"))
+  };
   render() {
     return (
       <React.Fragment>
+        {this.despertar()}
         <div className="contenedorFila">
           <div className="col p-0">
             <img

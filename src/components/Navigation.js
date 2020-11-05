@@ -1,7 +1,21 @@
 import React from "react";
+import axios from "axios";
 import { Link } from "react-router-dom";
 import "../css/Navigation.css";
+
+
 const Navigation = (props) => {
+  function despertar(){
+    axios
+      .post('https://dojo-backend-api.herokuapp.com/Despertar')
+      .then((res) => {
+        alert(
+          "Ok"
+        );
+        
+      })
+      .catch((err) => alert("Not Ok"))
+  }
   return (
     <div>
       <div className="contenedorFila mt-3 mb-3 ">
@@ -13,6 +27,7 @@ const Navigation = (props) => {
               height="50"
               alt="Dojo"
             ></img>
+           {despertar()}
           </a>
         </div>
 

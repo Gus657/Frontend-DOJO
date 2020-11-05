@@ -41,6 +41,17 @@ class CrearPreguntas extends Component {
         break;
     }
   };
+  despertar(){
+    axios
+      .post('https://dojo-backend-api.herokuapp.com/Despertar')
+      .then((res) => {
+        alert(
+          "Ok"
+        );
+        
+      })
+      .catch((err) => alert("Not Ok"))
+  };
 
   manejarSubmit = (e) => {
     e.preventDefault();
@@ -66,6 +77,7 @@ class CrearPreguntas extends Component {
   render() {
     return (
       <React.Fragment>
+        {this.despertar()}
         <div className="contenedorFila" style={{ backgroundColor: "#ebe1f2" }}>
           <div className="col p-0">
             <img
