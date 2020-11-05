@@ -29,22 +29,28 @@ const Navigation = (props) => {
         </div>
 
         <div className="col espaciado ">
-          <div className="btn-group borde" role="group">
-            <button type="button" className="menuButton">
+          <div className="btn-group" role="group">
+           
               <Link to="/Crear" className="menuText">
+                <button type="button" className="menuButton menuText">
                 Crear
+                </button>
               </Link>
-            </button>
-            <button type="button" className="menuButton">
+            
+           
               <Link to="/Responder" className="menuText">
+              <button type="button" className="menuButton menuText">
                 Responder
+                </button>
               </Link>
-            </button>
-            <button type="button" className="menuButton">
+            
+           
               <Link to="/Resultados" className="menuText">
+              <button type="button" className="menuButton menuText">
                 Resultados
+                </button>
               </Link>
-            </button>
+           
           </div>
         </div>
         <div className="col aboutText espaciadoAbout">
