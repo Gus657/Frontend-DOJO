@@ -37,7 +37,7 @@ class CrearPreguntas extends Component {
       .post(URLBuscar, jsonBuscar)
       .then((res) => {
         if (res.data==null){
-          alert("Los códigos utilizados no son correctos! " ) 
+          alert("Los códigos utilizados no son correctos 😢" ) 
         }else{
           this.setState({ positivo: res.data.positivo });
           this.setState({ negativo: res.data.negativo });
@@ -46,7 +46,7 @@ class CrearPreguntas extends Component {
           this.setState({ estado: "visible"});
         }
       })
-      .catch((err) => alert("Error al buscar la pregunta"));
+      .catch((err) => alert("Error al buscar la pregunta 😢"));
   };
   despertar(){
     axios
