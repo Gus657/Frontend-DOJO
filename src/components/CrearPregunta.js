@@ -64,12 +64,12 @@ class CrearPreguntas extends Component {
       .post(URL, peti)
       .then((res) => {
         alert(
-          "Pregunta Creada Correctamente! Te enviaremos un correo con tus códigos de acceso :)"
+          "Pregunta Creada Correctamente! ✔ Te enviaremos un correo con tus códigos de acceso 😉"
         );
         this.setState({ codigoPregunta: res.data.codigoPregunta });
         this.setState({ codigoAcceso: res.data.codigoAccesoPregunta });
       })
-      .catch((err) => alert("Error al registrar la pregunta"));
+      .catch((err) => alert("Error al registrar la pregunta 😢"));
   };
 
   render() {
