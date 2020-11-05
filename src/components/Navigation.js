@@ -9,12 +9,9 @@ const Navigation = (props) => {
     axios
       .post('https://dojo-backend-api.herokuapp.com/Despertar')
       .then((res) => {
-        alert(
-          "Ok"
-        );
-        
+ 
       })
-      .catch((err) => alert("Not Ok"))
+      .catch((err) => {})
   }
   return (
     <div>

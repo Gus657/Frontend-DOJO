@@ -52,12 +52,10 @@ class CrearPreguntas extends Component {
     axios
       .post('https://dojo-backend-api.herokuapp.com/Despertar')
       .then((res) => {
-        alert(
-          "Ok"
-        );
+        
         
       })
-      .catch((err) => alert("Not Ok"))
+      .catch((err) => {})
   };
   render() {
     return (
