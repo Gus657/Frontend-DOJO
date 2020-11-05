@@ -16,8 +16,8 @@
    .menuText{
        color: #706f6f;
        font-weight: bold;
-       font-size: 150%;
-      
+        border-radius: 5px;
+        height: 35px;
    }
    
    .aboutText{
