@@ -115,6 +115,7 @@ class CrearPreguntas extends Component {
                         >
                           Buscar
                         </button>
+      
                       </center>
                     </div>
                   </div>
@@ -179,7 +180,7 @@ class CrearPreguntas extends Component {
                           >
                             Registrar respuesta
                           </button>
-                 
+                         <h6 className="mt-3 text-muted">No compartiremos tu respuesta con nadie {"😉"}</h6>
                         </center>
                       </div>
                     </div>
