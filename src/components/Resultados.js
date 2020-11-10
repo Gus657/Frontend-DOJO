@@ -32,12 +32,17 @@ class CrearPreguntas extends Component {
       codigoPregunta: this.state.codigoPregunta,
       codigoAccesoPregunta: this.state.codigoAccesoPregunta
     };
-    const URLBuscar = "https://dojo-backend-api.herokuapp.com/ObtenerRespuesta";
+     if  (jsonBuscar.codigoPregunta===''||jsonBuscar.codigoAccesoPregunta===''){
+      alert(
+        "Por favor llena todos los campos 😥"
+      );
+    }else{
+      const URLBuscar = "https://dojo-backend-api.herokuapp.com/ObtenerRespuesta";
     axios
       .post(URLBuscar, jsonBuscar)
       .then((res) => {
         if (res.data==null){
-          alert("Los códigos utilizados no son correctos 😢" ) 
+          alert("Los códigos utilizados no son correctos! " ) 
         }else{
           this.setState({ positivo: res.data.positivo });
           this.setState({ negativo: res.data.negativo });
@@ -46,7 +51,8 @@ class CrearPreguntas extends Component {
           this.setState({ estado: "visible"});
         }
       })
-      .catch((err) => alert("Error al buscar la pregunta 😢"));
+      .catch((err) => alert("Error al buscar la pregunta"));
+    }
   };
   despertar(){
     axios
