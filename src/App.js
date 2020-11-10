@@ -13,8 +13,8 @@ function App() {
      <div style={{ backgroundColor: '#ebe1f2', "paddingTop":'180px'}}>
      <footer >
         <div className=" text-light text-center py-3 "style={{ backgroundColor: '#3f066c'}}>
-          2020 - 
-          <a href="https://github.com/Gus657"> @Gus657</a>
+          Dojo - 
+          <a href="https://youtu.be/y2QvcW9T6EQ"> Ayuda</a>
         </div>
       </footer>
      </div>
