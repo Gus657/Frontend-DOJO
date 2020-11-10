@@ -59,21 +59,27 @@ class CrearPreguntas extends Component {
       autorPregunta: this.state.autorPregunta,
       tema: this.state.tema,
     };
-    const URL = "https://dojo-backend-api.herokuapp.com/CrearPregunta";
-    axios
-      .post(URL, peti)
-      .then((res) => {
-        alert(
-          "Pregunta Creada Correctamente! ✔ Te enviaremos un correo con tus códigos de acceso 😉"
-        );
-        this.setState({ codigoPregunta: res.data.codigoPregunta });
-        this.setState({ codigoAcceso: res.data.codigoAccesoPregunta });
-        this.setState({ email: '' });
-        this.setState({ pregunta: '' });
-        this.setState({ autorPregunta: '' });
-        this.setState({ tema: '' });
-      })
-      .catch((err) => alert("Error al registrar la pregunta 😢"));
+     if  (peti.email===''||peti.pregunta===''||peti.autorPregunta===''||peti.tema===''){
+      alert(
+        "Por favor llena todos los campos 😥"
+      );
+    }else{
+      const URL = "https://dojo-backend-api.herokuapp.com/CrearPregunta";
+      axios
+        .post(URL, peti)
+        .then((res) => {
+          alert(
+            "Pregunta Creada Correctamente! 🙌 Te enviaremos un correo con tus códigos de acceso 😎"
+          );
+          this.setState({ codigoPregunta: res.data.codigoPregunta });
+          this.setState({ codigoAcceso: res.data.codigoAccesoPregunta });
+          this.setState({ email: '' });
+          this.setState({ pregunta: '' });
+          this.setState({ autorPregunta: '' });
+          this.setState({ tema: '' });
+        })
+        .catch((err) => alert("Error al registrar la pregunta 😢"));
+    }
   };
 
   render() {
