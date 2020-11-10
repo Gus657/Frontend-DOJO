@@ -68,6 +68,10 @@ class CrearPreguntas extends Component {
         );
         this.setState({ codigoPregunta: res.data.codigoPregunta });
         this.setState({ codigoAcceso: res.data.codigoAccesoPregunta });
+        this.setState({ email: '' });
+        this.setState({ pregunta: '' });
+        this.setState({ autorPregunta: '' });
+        this.setState({ tema: '' });
       })
       .catch((err) => alert("Error al registrar la pregunta 😢"));
   };
