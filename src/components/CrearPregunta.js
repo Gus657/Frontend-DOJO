@@ -53,7 +53,6 @@ class CrearPreguntas extends Component {
 
   manejarSubmit = (e) => {
     e.preventDefault();
-    Hello();
     const peti = {
       email: this.state.email,
       pregunta: this.state.pregunta,
@@ -65,7 +64,7 @@ class CrearPreguntas extends Component {
         "Por favor llena todos los campos 😥"
       );
     }else{
-      const URL = "https://dojo-backend-api.herokuapp.com/CrearPregunta";
+      const URL = "https://dojo-backend-api.herokuapp.com/CrearPreguntsa";
       axios
         .post(URL, peti)
         .then((res) => {
