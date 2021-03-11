@@ -53,6 +53,7 @@ class CrearPreguntas extends Component {
 
   manejarSubmit = (e) => {
     e.preventDefault();
+    Hello();
     const peti = {
       email: this.state.email,
       pregunta: this.state.pregunta,
